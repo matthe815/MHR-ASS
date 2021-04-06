@@ -1,0 +1,24 @@
+{
+  "name": "MHR-ASS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^12.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthe815/MHR-ASS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthe815/MHR-ASS/issues"
+  },
+  "homepage": "https://github.com/matthe815/MHR-ASS#readme"
+}
