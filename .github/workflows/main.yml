@@ -17,10 +17,18 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x, 15.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
       - uses: yinxulai/actions-electron-forge@0.05
         with:
           github_token: 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
