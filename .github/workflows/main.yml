@@ -22,3 +22,5 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - uses: yinxulai/actions-electron-forge@0.05
+        with:
+          github_token: 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
